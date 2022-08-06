@@ -28,3 +28,16 @@ app.use('/',require('./routes/news'))
 app.listen(port,()=> {
     console.log(`Server is running on http://localhost:${port}`)
 })
+
+
+/* for deployment, use below code in package.json file
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     "scripts": {
+         "start": "node app.js"
+
+* for local
+~~~~~~~~~~~~~~~~~~~~~
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+
+*/
