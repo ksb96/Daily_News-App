@@ -1,18 +1,30 @@
 const path = require('path')
 const express = require('express')
-const app=express()
 const port = process.env.PORT||3000;
-//const bodyParser = require('body-parser');
 const moment = require('moment')
+const favicon = require('serve-favicon')
+
+//init app
+const app=express()
+
+//init local-moment
 app.locals.moment = moment;
 
-// template engine  
+//loading favicon 
+app.use(favicon(path.join(__dirname, 'public', 'world-news.ico')))
+
+//static file   
 app.use(express.static(path.join(__dirname, 'public')))
-app.set('view engine','ejs')
 
-app.use(express.urlencoded({ extended: true }));
-app.use('/',require('./routes/news'))
-
+//set view-engine(EJS)
+app.set('view engine','.ejs')
 app.set('views','./views')
 
-app.listen(port,()=> console.log("started"))
+app.use(express.urlencoded({ extended: true }));
+
+//load routes
+app.use('/',require('./routes/news'))
+
+app.listen(port,()=> {
+    console.log(`Server is running on http://localhost:${port}`)
+})
