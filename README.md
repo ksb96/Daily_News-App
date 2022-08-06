@@ -1,9 +1,9 @@
-# News-website
+# News Website
 
-Node.js project using express, ejs where we fetch the news data from news api.
+A Node.js application using express, ejs where it fetchs the news data from newsapi.org.
 
 <h2>Installation</h2>
-<p>To run this project, install it locally using npm:</p>
+<p>To run this project, locally run the below in your terminal:</p>
 <div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="$ npm install
 $ npm start
 "><pre><code>$ npm install
