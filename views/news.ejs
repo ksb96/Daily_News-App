@@ -1,7 +1,6 @@
 <%- include("partials/header.ejs") %>
 <body>
 <%- include("partials/navbar.ejs") %>
-
 <div class="news-container ">
     <div class="news ">
         <% articles.forEach(function(article,index){ %>
@@ -15,7 +14,7 @@
                 <br>
             <p style="margin-bottom: 0px; position: absolute; right: 0; bottom: 0; font-family: ui-monospace;">
                 Updated: <span style="color:#000;">
-                    <%- new Date(article.publishedAt.slice(0,10)).toDateString() %>
+                    <%- new Date(article.publishedAt.slice(0,10)).toDateString() %> -->
                     <%- moment.utc(article.publishedAt).local().format('hh : mm A') %> </span></p></a>
             <% } %>
             <% }) %>
@@ -23,7 +22,7 @@
     </div>
     
     <!-- ext.libs  -->
-    <script src="moment.js"></script>
+    <script src="moment.js"></script> -->
     <script src="moment-timezone-with-data.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
