@@ -2,7 +2,7 @@ const path = require('path')
 const express = require('express')
 const port = process.env.PORT||3000;
 const moment = require('moment')
-const favicon = require('serve-favicon')
+const favicon = require('serve-favicon');
 
 //init app
 const app=express()
