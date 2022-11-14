@@ -17,8 +17,6 @@ $ node app.js
 
 <h2>Mobile view</h2>
 
-![image](https://user-images.githubusercontent.com/52975077/201581814-cde7b8d6-77eb-4e6e-ad4c-f62aaf91be40.png)
-
-![image](https://user-images.githubusercontent.com/52975077/201581881-fe4d8713-e580-42bd-b40f-a5535c4adc8b.png)
+![image](https://user-images.githubusercontent.com/52975077/201581814-cde7b8d6-77eb-4e6e-ad4c-f62aaf91be40.png) ![image](https://user-images.githubusercontent.com/52975077/201581881-fe4d8713-e580-42bd-b40f-a5535c4adc8b.png)
 
 
